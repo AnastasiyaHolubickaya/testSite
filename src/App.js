@@ -40,7 +40,7 @@ const App = (props) => {
                     <Navigation  menuData={props.appState.navigation.menuData} menuSidebar={props.appState.navigation.menuSidebar} changeStyleElement={props.changeStyleElement}/>
                 </div>
                 <div className='content'>
-                    <Route exact path='/home'
+                    <Route exact path='/'
                            render={ () => <Home arrHead={props.appState.homePage.arrHead} homeBlock2={props.appState.homePage.homeBlock2} homeBlock3={props.appState.homePage.homeBlock3}
 
 
