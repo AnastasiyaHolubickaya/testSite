@@ -1,0 +1,117 @@
+.blockGallery{
+    width: 800px;
+    max-width: 1300px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.title{
+    font-family: "Poppins", Sans-serif, sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    color: #000;
+
+}
+
+@keyframes move {
+   from  { left: 0; }
+    to  { left: -1000px }
+}
+.container{
+    width: max-content;
+    background-color: transparent;
+    display:block;
+    position: relative;
+    left: 0;
+    font-family: 'Varela Round',sans-serif;
+    margin-bottom: 50px;
+    animation: move 5s linear 0.5s infinite alternate;
+    -moz-animation: move 5s linear 0.5s infinite alternate;
+    -webkit-animation: move 5s linear 0.5s infinite alternate;
+}
+.container:hover{
+    animation-play-state: paused;
+}
+
+.itemGallery{
+    width: 200px;
+    margin: 10px;
+    display: inline-block;
+}
+.itemGallery img{
+    width: 100%;
+}
+.blockInputs{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.input{
+display: none;
+}
+.input label{
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 25px 12px 0 16px;
+    position: relative;
+    width: 8px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: background ease-in-out .5s;
+    -moz-transition: background ease-in-out .5s;
+    -o-transition: background ease-in-out .5s;
+    transition: background ease-in-out .5s;
+
+
+}
+.input label:after{
+    border: 2px solid #ddd;
+    content: " ";
+    display: block;
+    height: 12px;
+    left: -4px;
+    position: absolute;
+    top: -4px;
+    width: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.input label:hover,
+#img1:checked ~ .controls label:nth-of-type(1),
+#img2:checked ~ .controls label:nth-of-type(2),
+#img3:checked ~ .controls label:nth-of-type(3),
+#img4:checked ~ .controls label:nth-of-type(4)
+{
+    background: #ddd;
+}
+#img1:checked ~ .itemGallery > .img1,
+#img2:checked ~ .itemGallery > .img2,
+#img3:checked ~ .itemGallery > .img3,
+#img4:checked ~ .itemGallery > .img4
+{
+    background: #ddd;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024px){
+    .title{
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 768px){
+    .blockGallery{
+        width: 70%;
+    }
+}

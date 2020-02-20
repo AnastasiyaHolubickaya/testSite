@@ -1,0 +1,145 @@
+.menuSidebar{
+    position: absolute;
+    top:88px;
+    width: 100%;
+    background-color:#F9F9F9;
+
+}
+.menuSidebar ul.sidebar{
+    list-style-type: none;
+    display: block;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.menuSidebar ul.sidebar li{
+    text-transform: uppercase;
+    border-bottom:1px solid #eaeaea;
+    line-height: 1.45;
+
+}
+.menuSidebar ul.sidebar li a{
+    display: block;
+    padding: 10px 20px;
+    font-weight: 700;
+    color: #3a3a3a;
+    font-family: 'Varela Round',sans-serif;
+    transition: all .2s linear;
+    font-size: 13px;
+
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.btn{
+    margin-top: 15px;
+text-align: center;
+}
+
+.btn1{
+    width: 130px;
+    height: 35px;
+    border: 2px solid #2355DA;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #2355DA;
+    text-transform: capitalize;
+    font-weight: bolder;
+    margin-left: 14px;
+    transition: all .2s linear;
+}
+.btn1:hover{
+    background-color: #2355DA;
+    color: #ffffff;
+}
+.btn1:focus{
+
+    outline: none;
+}
+.btn2{
+    width: 80px;
+    height: 35px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    border: 2px solid #4DE55C;
+    border-radius: 30px;
+    background-color: transparent;
+    color:#4DE55C;
+    margin-left: 4px;
+    transition: all .2s linear;
+}
+.btn2:hover{
+    background-color: #4DE55C;
+    color: #ffffff;
+}
+.btn2:focus{
+
+    outline: none;
+}
+
+.menuSidebar ul li a:hover{
+    color: #2355da;
+}
+.menuSidebar ul li a:active{
+    color: #2355da;
+}
+.navOpen{
+    display: block;
+}
+.navClose{
+    display: none;
+}
+.qwert{
+    list-style-type: none;
+
+}
+.qwert li a{
+
+}
+.qwertLi{
+    text-transform: capitalize;
+}
+
+
+.ul_dropdoun{
+    padding-left: 0;
+    width: 240px;
+    position: absolute;
+    background-color: #ffffff;
+    text-align: left;
+    border:2px solid #1e73be;
+    line-height: 1.45;
+    box-shadow: 0 4px 10px -2px rgba(0,0,0,.1);
+    z-index: 99999;
+    list-style-type: none;
+    left:120px;
+    top:-20px;
+    opacity: 0;
+}
+
+.li_dropdoun{
+    text-transform: capitalize;
+    border-bottom:1px solid #eaeaea;
+}
+.ul_dropdoun:hover{
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+}
+.li_dropdoun a{
+    display: block;
+    text-decoration: none;
+    transition: all .2s linear;
+    padding: 12.6px 14px;
+    color: #3a3a3a;
+    font-family: 'Varela Round',sans-serif;
+    font-size: 14px;
+}
+
+@media screen and  (max-width : 960px) {
+    .menuSidebar{
+        display: none;
+    }
+
+
+
+}

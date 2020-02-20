@@ -1,0 +1,170 @@
+.block{
+    width: 100%;
+    max-width: 1280px;
+    position: relative;
+    padding-right: 20px ;
+    margin: 0 auto;
+}
+.item_img{
+    position: absolute;
+    top:10px;
+    left: 20px
+
+}
+.item_menu{
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.ul_menu{
+    list-style-type: none;
+    margin-top: 40px;
+    text-transform: uppercase;
+
+}
+.li_menu{
+
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 16px;
+
+}
+.li_menu a{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.li_menu a:hover{
+    color: #2355DA;
+}
+.active{
+    color: #2355DA;
+}
+.li_block{
+    position: relative;
+}
+.li_block:hover  .ul_dropdoun{
+    display: block;
+}
+.ul_dropdoun{
+    padding-left: 0;
+    display: none;
+    width: 240px;
+    position: absolute;
+    top:20px;
+    background-color: #ffffff;
+    text-align: left;
+    transition: display ease-in-out .3s;
+    border:1px solid #1e73be;
+    line-height: 1.45;
+    box-shadow: 0 4px 10px -2px rgba(0,0,0,.1);
+    z-index: 99999;
+    list-style-type: none;
+}
+.li_dropdoun a{
+    text-transform: capitalize;
+    border-bottom:1px solid #eaeaea;
+
+}
+.li_dropdoun a{
+    display: block;
+    text-decoration: none;
+    transition: all .2s linear;
+    padding: 12.6px 14px;
+    color: #3a3a3a;
+    font-family: 'Varela Round',sans-serif;
+    font-size: 14px;
+}
+.li_dropdoun:hover{
+    cursor: pointer;
+}
+.li_dropdoun a:hover{
+    cursor: pointer;
+}
+
+
+
+.displayBlock{
+    display: block;
+}
+.btn{
+    margin-top: 15px;
+
+}
+
+.btn1{
+    width: 150px;
+    height: 45px;
+    border: 2px solid #2355DA;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #2355DA;
+    text-transform: capitalize;
+    font-weight: bolder;
+    margin-left: 14px;
+    transition: all .2s linear;
+}
+.btn1:hover{
+    background-color: #2355DA;
+    color: #ffffff;
+}
+.btn1:focus{
+
+    outline: none;
+}
+.btn2{
+    width: 80px;
+    height: 45px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    border: 2px solid #4DE55C;
+    border-radius: 30px;
+    background-color: transparent;
+    color:#4DE55C;
+    margin-left: 4px;
+    transition: all .2s linear;
+}
+.btn2:hover{
+    background-color: #4DE55C;
+    color: #ffffff;
+}
+.btn2:focus{
+
+    outline: none;
+}
+.burger{
+    position: absolute;
+    left:84%;
+    top:25px;
+    width: 38px;
+    height: 40px;
+    background-color: #ffffff;
+    display: none;
+}
+.burger:hover{
+    cursor: pointer;
+}
+.navOpen{
+    display: block;
+}
+.navClose{
+    display: none;
+}
+
+@media screen and  (max-width : 1030px) {
+    .li_menu{
+        margin-left: 20px;
+        font-size: 14px;
+    }
+}
+@media screen and  (max-width : 960px) {
+    .item_menu{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+    }
+}

@@ -1,0 +1,63 @@
+.block{
+    width:300px;
+    font-family: 'Varela Round',sans-serif;
+    text-align:center;
+}
+.itemNumber{
+    color:#3a3a3a;
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+}
+.blockShadow{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0 0 8px -4px #000000;
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,-webkit-border-radius .3s,-webkit-box-shadow .3s;
+    line-height: 1.85714285714286;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+}
+.blockShadow:hover{
+    -webkit-box-shadow: 1px 2px 21px 3px #000000;
+    box-shadow: 1px 2px 16px -4px #000000;
+}
+
+.img{
+   width: 100%;
+    margin-bottom: 15px;
+    margin-top: 22px;
+    line-height: 1.85714285714286;
+}
+.img img{
+    width: 68px;
+    height: 68px;
+}
+.itemText {
+    width: 100%;
+    margin-bottom: 20px;
+}
+span.title {
+   font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+ span.text{
+    color: #a3a3a3;
+    font-weight: 500;
+    line-height: 1.85714285714286;
+    text-transform: none;
+    font-size: 15px;
+}
+
+@media screen and  (max-width : 768px) {
+    .block{
+        width:100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+
+}

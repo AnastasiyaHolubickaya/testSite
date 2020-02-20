@@ -1,0 +1,36 @@
+.blockGallery{
+    width: 100%;
+    max-width: 1400px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+.title{
+    font-family: 'Varela Round',sans-serif;
+    font-size: 2em;
+    color: #3a3a3a;
+    font-weight: bolder;
+}
+.area{
+    display: inline-block;
+    width: 100%;
+
+    overflow: hidden;
+    margin: 0 auto;
+}
+.visiblArea{
+    width:100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.itemGallery{
+    margin-right: 4%;
+    margin-left: 4%;
+    display: inline-block;
+
+}
+.itemGallery img{
+    width: 100%;
+}

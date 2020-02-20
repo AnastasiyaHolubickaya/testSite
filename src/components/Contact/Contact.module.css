@@ -1,0 +1,127 @@
+.contactPage{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.block{
+    width: 100%;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    align-items: center;
+}
+.item_text{
+    box-sizing: border-box;
+    width: 580px;
+
+}
+.item_img{
+    box-sizing: border-box;
+    width: 580px;
+    padding: 45px;
+
+}
+.item_img img{
+    max-width: 100%;
+}
+h1{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+span{
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.info{
+    display: block;
+    font-size: 15px;
+    text-transform: none;
+    margin-top: 30px;
+    line-height: 1.7;
+}
+.info a{
+    color:#2355DA;
+    font-weight: bolder;
+    text-decoration: none;
+    text-transform: none;
+
+}
+.info a:hover{
+    color:#000000;
+}
+.btn{
+    width: 280px;
+    height: 38px;
+    border: 1px solid #4054B2;
+    background-color: transparent;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-bottom: 116px;
+    box-shadow: 0 10px 30px -8px rgba(0,0,0,.16);
+    text-transform: capitalize;
+    color:#4054B2;
+    font-size: 18px;
+}
+
+.btn:hover {
+    color:#ffffff;
+    background-color: #4054B2;
+}
+
+.btn:focus{
+    outline: none;
+}
+a.noBold{
+    font-weight: normal;
+}
+
+.network{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.blockBlue{
+    width: 100%;
+    background-color:#2186F6;
+}
+@media screen and  (max-width : 1180px) {
+    .item_text{
+        width: 500px;
+        font-size: 15px;
+    }
+    .item_img{
+        width: 500px;
+    }
+
+}
+@media screen and  (max-width : 600px) {
+    .item_text{
+        width: 100%;
+        font-size: 10px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .item_img{
+        width: 300px;
+    }
+
+}
+@media screen and  (max-width : 1000px) {
+
+    .item_img{
+        -webkit-order: 1;
+        order: -1;
+    }
+    .block{
+        text-align: left;
+    }
+    .btn{
+        margin-top: 30px;
+    }
+}

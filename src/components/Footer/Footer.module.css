@@ -1,0 +1,86 @@
+.block{
+    font-family: 'Varela Round',sans-serif;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    padding-left: 20px;
+    font-size: 13px;
+    text-align: justify;
+    line-height: 1.85714285714286;
+    box-sizing: border-box;
+}
+.item_fig{
+    width: 280px;
+}
+.item_fig img{
+    width: 150px;
+    height: 53px;
+}
+.item_link{
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.item_link img{
+    width: 10px;
+    height:10px;
+}
+.item_icon{
+    padding-top: 18px;
+}
+.item_icon img{
+    width: 18px;
+}
+.item_icon span{
+    margin-left: 15px;
+}
+figcaption{
+    margin-top: 27px;
+}
+h2{
+    font-size: 1.3885714285714rem;
+    margin-bottom: 1em;
+    line-height: 1.5;
+    font-weight: 400;
+}
+p{
+
+    margin-top: 40px;
+    font-weight: bold;
+    line-height: 0;
+}
+.block div{
+    width: 260px;
+    margin-left: 40px;
+}
+.basement{
+    font-family: 'Varela Round',sans-serif;
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 12px;
+}
+.getTouch span{
+    text-transform: none;
+    font-size: 12px;
+    font-weight: normal;
+}
+.getTouch a{
+    margin-left: -40px;
+    color: #000000;
+    font-size: 14px;
+}
+.active{
+    color:#2185F5;
+}
+a{
+    text-transform: capitalize;
+}
+a:hover{
+    color:#2185F5;
+}

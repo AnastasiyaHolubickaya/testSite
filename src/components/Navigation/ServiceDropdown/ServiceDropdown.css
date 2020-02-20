@@ -1,0 +1,29 @@
+.li_dropdoun{
+    text-transform: capitalize;
+    border-bottom:1px solid #eaeaea;
+
+}
+.li_dropdoun a{
+    display: block;
+    text-decoration: none;
+    transition: all .2s linear;
+    padding: 12.6px 14px;
+    color: #3a3a3a;
+    font-family: 'Varela Round',sans-serif;
+    font-size: 14px;
+}
+
+.ul_dropdoun{
+    padding-left: 0;
+    width: 240px;
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    text-align: left;
+    transition: display ease-in-out .3s;
+    border:2px solid #1e73be;
+    line-height: 1.45;
+    box-shadow: 0 4px 10px -2px rgba(0,0,0,.1);
+    z-index: 99999;
+    list-style-type: none;
+}

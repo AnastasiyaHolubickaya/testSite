@@ -1,0 +1,30 @@
+
+.item{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1280px;
+    text-align: center;
+    padding: 75px 77px 77px 60px;
+    margin: 0 auto;
+    color: #ffffff;
+}
+.item h1{
+    font-size: 2.2em;
+    text-transform: uppercase;
+    font-family: "Archivo Black", Sans-serif, sans-serif;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.span{
+    font-family: 'Varela Round',sans-serif;
+    text-transform: none;
+    line-height: 1.85714285714286;
+    font-size: 14px;
+}
+@media screen and  (max-width : 900px) {
+    .item h1{
+        font-size: 2em;
+    }
+}

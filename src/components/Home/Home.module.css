@@ -1,0 +1,23 @@
+
+.blockItem{
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    background-color: #F9FAFD;
+    margin: 0 auto;
+}
+.blockItem2{
+    background: transparent url("../../img/blue_fone2.png") no-repeat;
+    background-size: 100% 100%;
+}
+.blockWidth{
+   width: 100%;
+}
+.blockGrey{
+    width: 100%;
+    background-color:#F9FAFD;
+}
+.blockBlue{
+    width: 100%;
+    background-color:#2355DA ;
+}
+

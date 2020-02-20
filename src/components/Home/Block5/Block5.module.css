@@ -1,0 +1,32 @@
+.block{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.block h2{
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+
+
+}
+.blockFlex{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+@media screen and  (max-width : 768px) {
+    .block h2{
+        font-size: 2rem;
+    }
+
+
+
+}

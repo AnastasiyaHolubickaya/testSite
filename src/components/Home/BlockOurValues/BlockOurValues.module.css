@@ -1,0 +1,88 @@
+.block{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    padding-top: 75px;
+    box-sizing: border-box;
+}
+.block h1{
+    font-family: "Poppins", Sans-serif, sans-serif;
+    color: #000;
+    font-size: 3rem;
+    font-weight: 700;
+    display: block;
+
+
+}
+.blockFlex{
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 66px;
+}
+span.info{
+    font-family: 'Varela Round',sans-serif;
+    display: block;
+    text-transform: none;
+    margin-bottom: 60px;
+    color: #7a7a7a;
+    font-weight: 500;
+}
+span{
+    text-transform: none;
+}
+span.text{
+    text-transform: none;
+}
+.item {
+    width: 17%;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    margin: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.img{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background: transparent url("../../../img/icon/sprite2.png");
+    border: 1px solid #F9FAFD;
+}
+.img1{
+   background-position: 0 0;
+}
+.img2{
+    background-position: 80px 0;
+}
+.img3{
+    background-position: 160px 0;
+}
+.img4{
+    background-position: 320px 0;
+}
+
+
+.title{
+    color: #000;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+@media screen and  (max-width : 800px) {
+    .block h1{
+        font-size: 2rem;
+    }
+    .item {
+        width: 100%;
+
+    }
+}

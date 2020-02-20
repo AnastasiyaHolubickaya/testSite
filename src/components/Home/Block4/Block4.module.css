@@ -1,0 +1,32 @@
+.block{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+}
+.title{
+    font-family: "Poppins", Sans-serif, sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    box-sizing: border-box;
+    margin-top: 90px;
+    margin-bottom: 55px;
+}
+.blockFlex{
+    width: 100%;
+    max-width: 1300px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+@media screen and  (max-width : 900px) {
+    .title{
+        font-size: 2.5rem;
+    }
+
+}

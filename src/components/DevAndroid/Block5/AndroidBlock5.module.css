@@ -1,0 +1,50 @@
+.FAQ{
+    text-align: left;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: 40px;
+}
+.blockSmall{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+.detailsH1{
+    color: #000;
+    font-family: "Poppins", Sans-serif, sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.3px;
+    text-align: center;
+}
+.summaryB{
+    color: blue;
+}
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details{
+    outline: none;
+    border-bottom: 2px solid #F4F4F7;
+    display: block;
+    padding-top: 20px;
+}
+details:focus,
+summary:focus {
+    outline: 0;
+    outline: none;
+}
+.summarySpan{
+    text-transform: none;
+}
+@media screen and  (max-width : 900px) {
+    .item h1{
+        font-size: 2em;
+    }
+    .detailsH1{
+        font-size: 2em;
+    }
+}

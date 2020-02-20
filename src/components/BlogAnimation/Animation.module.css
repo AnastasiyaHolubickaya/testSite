@@ -1,0 +1,357 @@
+.block{
+    width: 100%;
+    background-color: #F5F5F5;
+    padding-top: 56px;
+}
+.page{
+    width: 100%;
+    max-width: 1340px;
+    padding: 80px 94px;
+    font-family: "Varela Round", sans-serif;
+    font-size: 16px;
+    margin:0 auto;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+.page h3{
+    font-size: 28px;
+    font-weight: normal;
+}
+.a{
+    color: #2355da;
+    transition: all .2s linear;
+    text-decoration: none;
+}
+
+.page a:hover{
+    color: #000000;
+}
+.foto1, .foto2{
+    width: 100%;
+    margin-top: 2em;
+    position: relative;
+}
+.foto1 img{
+    width: 100%;
+}
+.text{
+    width: 100%;
+    margin-bottom: 1.6em;
+    line-height: 1.85714285714286;
+    font-weight: normal;
+    color: #3a3a3a;
+    text-align: justify;
+
+}
+.text::first-letter{
+    font-size: 8.4em;
+    line-height: .68;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 2px 10px;
+    float: left;
+    margin-right: 5px;
+
+}
+.quote{
+    border-left: 5px solid rgba(0,0,0,.05);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 45px;
+    position: relative;
+}
+.hide{
+    position: absolute;
+    width: 80%;
+    background-color: #F5F5F5;
+    font-style: italic;
+    -webkit-box-shadow: 6px 8px 4px -1px rgba(159,166,166,1);
+    -moz-box-shadow: 6px 8px 4px -1px rgba(159,166,166,1);
+    box-shadow: 6px 8px 4px -1px rgba(159,166,166,1);
+    padding: 10px;
+    z-index: 999;
+    margin: 0 auto;
+    line-height: 2;
+    font-size: .8em;
+    display: none;
+}
+blockquote{
+
+    font-style: italic;
+    font-size: 1em;
+    line-height: 2;
+}
+.div{
+    height: 50px;
+}
+.info{
+    width: 80%;
+    position: absolute;
+    background-color: #313131;
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: left;
+    padding: 41px;
+    bottom: -113px;
+    right: -61px;
+    box-sizing: border-box;
+}
+.columns{
+    margin-top: 210px;
+    width: 100%;
+    columns: 2  auto;
+    column-gap: 50px;
+    line-height: 2;
+    text-align: justify;
+    padding-bottom: 100px;
+}
+strong{
+    display: block;
+ }
+.nav_full {
+    width: 90%;
+    background-color: #f5f5f5;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    line-height: 0;
+}
+
+button.prev{
+   float: left;
+}
+.btn a{
+    color: #2355da;
+    font-size: 1.06666rem;
+}
+.btn a:hover{
+    color: #000000;
+}
+button.next{
+    float: right;
+}
+.button{
+    width: 90%;
+    margin: 0 auto;
+}
+.comment{
+    width: 100%;
+    color: #3a3a3a;
+    margin: 0 auto;
+}
+.commentHeader{
+    font-size: 1.6428571428571rem;
+    font-weight: 400;
+    text-transform: none;
+    display: block;
+}
+.commentText{
+    margin-bottom: 1.5em;
+    font-size: 14px;
+    text-transform: none;
+}
+ .formComment input{
+    width: 30%;
+    padding: 10px;
+    height: 55px;
+    color: #666;
+   margin-right: 4.5%;
+    border: 1px solid #ccc;
+     margin-top:31px;
+     box-sizing: border-box;
+
+}
+ .formComment input:-moz-placeholder{
+     color:#A3A5A4;
+     opacity: 1;
+     transition: opacity .3s ease;
+ }
+.formComment input::-moz-placeholder{
+    color:#A3A5A4;
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+.formComment input::-webkit-input-placeholder{
+    font-size: 0.8em;
+    color:#A3A5A4;
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+.formComment input:focus:-moz-placeholder{
+    opacity: 0;
+}
+.formComment input:focus::-moz-placeholder{
+    opacity: 0;
+}
+.formComment input:focus::-webkit-input-placeholder{
+    opacity: 0;
+}
+
+.formComment textarea:-moz-placeholder{
+    color:#A3A5A4;
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+.formComment textarea::-moz-placeholder{
+    color:#A3A5A4;
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+.formComment textarea::-webkit-input-placeholder{
+    font-size: 0.8em;
+    color:#A3A5A4;
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+.formComment textarea:focus:-moz-placeholder{
+    opacity: 0;
+}
+.formComment textarea:focus::-moz-placeholder{
+    opacity: 0;
+}
+.formComment textarea:focus::-webkit-input-placeholder{
+    opacity: 0;
+}
+
+
+
+
+
+
+
+ .formComment input:nth-of-type(3){
+     margin-right: 0;
+ }
+ .formComment textarea{
+     width: 100%;
+     height: 244px;
+     border: 1px solid #ccc;
+     padding: 10px;
+     box-sizing: border-box;
+ }
+input:focus{
+    color: #2355da;
+}
+
+form{
+    padding: 40px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+#textarea{
+    width: 100%;
+    outline: none;
+}
+#textarea:focus{
+    border:#2355da;
+}
+
+input#check{
+    width: 12px;
+    height: 13px;
+}
+
+@media screen and (max-width: 600px){
+    .quote{
+        margin-left: 0;
+    }
+    .page{
+        padding: 30px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .quote{
+        height: 50px;
+    }
+    .quote:hover > .hide{
+        top:-50px;
+        display: block;
+    }
+
+    blockquote{
+        height: 150px;
+        white-space: nowrap; /* Запрещаем перенос строк */
+        overflow: hidden; /* Обрезаем все, что не помещается в область */
+        text-overflow:ellipsis;
+    }
+}
+
+@media screen and (max-width: 1340px){
+    .info{
+        bottom: -80px;
+        right: -40px;
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width: 1170px){
+    .info{
+        bottom: -40px;
+        right: -20px;
+        font-size: 2em;
+    }
+    .columns{
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .info{
+        bottom: 0;
+        right: 0;
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width: 976px){
+    .info{
+        bottom: 0;
+        right: 0;
+        font-size: 1.7em;
+        text-align: center;
+        padding: 20px;
+    }
+    .columns{
+        margin-top: 70px;
+    }
+}
+@media screen and (max-width: 768px){
+    .info{
+        bottom: 0;
+        right: 0;
+        font-size: 1.2em;
+        text-align: center;
+        padding: 20px;
+    }
+    .columns{
+        margin-top: 50px;
+        width: 100%;
+        columns: 1  auto;
+        column-gap: 0;
+        line-height: 2;
+        text-align: justify;
+
+    }
+    .formComment input{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 450px){
+    .info{
+        bottom: 0;
+        right: 0;
+        font-size: .8em;
+        text-align: center;
+        padding: 10px;
+    }
+    .commentHeader{
+        font-size: 20px;
+    }
+    .commentText{
+        font-size: 12px;
+    }
+}

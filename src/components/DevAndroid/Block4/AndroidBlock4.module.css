@@ -1,0 +1,66 @@
+.blockShadow{
+    width: 40%;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0 0 8px -4px #000000;
+    line-height: 1.85714285714286;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    text-align: left;
+}
+.h2Follow{
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+}
+.shadowImg{
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 22px;
+    line-height: 1.85714285714286;
+}
+.shadowImg img{
+    width: 68px;
+    height: 68px;
+}
+.shadowItem {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.itemTitle {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.itemText
+{
+    color: #a3a3a3;
+    font-weight: 500;
+    line-height: 1.85714285714286;
+    text-transform: none;
+    font-size: 15px;
+}
+.blockFlexServ{
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+
+@media screen and  (max-width : 768px) {
+    .blockShadow{
+        width:100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+

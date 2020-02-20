@@ -1,0 +1,56 @@
+.blockGallery{
+    width: 100%;
+    max-width: 1300px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.itemGallery{
+    width: 1000px;
+
+}
+.itemGallery img {
+    width: 100%;
+
+}
+.btn {
+    position: absolute;
+    top:50%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color:#D9E4EF;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.container img{
+    width: 100%;
+}
+.prev{
+    left:0;
+}
+.next{
+    right:0;
+}
+@media screen and (max-width: 1000px){
+    .btn{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 600px){
+    .btn{
+        font-size: 20px;
+    }
+}
+button[disabled]{
+    color: #E9E72D;
+}

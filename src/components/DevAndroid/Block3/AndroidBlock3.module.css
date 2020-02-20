@@ -1,0 +1,117 @@
+.blockSmall{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+.block2Items{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+}
+.h1Block3{
+    font-size: 2.2em;
+    color: #000;
+    font-family: "Poppins", Sans-serif, sans-serif;
+    font-weight: 700;
+    letter-spacing: 2.3px;
+    text-align: center;
+}
+.textBlock3{
+    text-align: center;
+    color: #545454;
+    font-family: 'Varela Round',sans-serif;
+    line-height: 1.85714285714286;
+    text-transform: none;
+    font-size: 16px;
+}
+.textBlock3 a{
+    color:#315FDA;
+    font-family: 'Varela Round',sans-serif;
+}
+.textBlock3 a:hover{
+    color:#545454;
+}
+
+.figureBlock3{
+    width: 100%;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.figureBlock3 figure{
+    width: 40%;
+}
+.figcaptionH1{
+    font-family: 'Varela Round',sans-serif;
+    color: #000;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.figcaptionSpan {
+    color: #bfbfbf;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2em;
+    text-transform: none;
+}
+.btnFigDiv{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.btnFigure{
+    outline: none;
+    font-family: "Montserrat", Sans-serif, sans-serif;
+    font-size: .8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #4064d7;
+    background-color: rgba(64,100,215,0);
+    border-radius: 50px;
+    padding: 15px 30px;
+    border-color: #4064d7;
+    transition: all .3s;
+    margin-bottom: 40px;
+
+}
+.btnFigure:hover{
+    color: #fff;
+    background-color: #4064d7;
+    border-color: #4064d7;
+}
+
+
+
+
+
+@media screen and  (max-width : 960px) {
+    .figureBlock3 figure{
+        width: 100%;
+    }
+    .figcaptionH1{
+        font-size: 1em;
+    }
+    .h1Block3{
+        font-size: 1em;
+    }
+}
+
+
+@media screen and  (max-width : 600px) {
+
+    .figureBlock3{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .btnFigure{
+        font-size: 16px;
+    }
+}
+

@@ -1,0 +1,467 @@
+
+.aboutPage{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.block{
+    width: 100%;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    align-items: center;
+}
+.item_text{
+    box-sizing: border-box;
+    width: 580px;
+
+
+}
+.item_img{
+    box-sizing: border-box;
+    width: 580px;
+    padding: 45px;
+
+}
+.item_img img{
+    max-width: 100%;
+}
+h1{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+span{
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.info{
+    display: block;
+    font-size: 15px;
+    text-transform: none;
+    margin-top: 30px;
+    line-height: 1.7;
+}
+.info a{
+    color:#2355DA;
+    font-weight: bolder;
+    text-decoration: none;
+    text-transform: none;
+
+}
+.info a:hover{
+    color:#000000;
+}
+.btn{
+    width: 200px;
+    height: 38px;
+    border: 1px solid #2355DA;
+    background-color: transparent;
+    border-radius: 20px;
+    color:#2355DA;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px -8px rgba(0,0,0,.16);
+    transition: all .3s;
+}
+.btn:hover{
+    color:#ffffff;
+    background-color: #2355DA;
+}
+.btn:focus{
+    outline: none;
+}
+.blockItem4{
+    width: 100%;
+    background-color:#F9FAFD;
+}
+
+.blockWidth{
+    width: 100%;
+}
+
+.counter{
+    width: 100%;
+    background-color: #315FDA;
+
+}
+.counterItems{
+    max-width: 1280px;
+    margin: 0 auto;
+    color: #ffffff;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: center;
+}
+.counterH1{
+    font-size: 2em;
+    font-family: "Poppins", Sans-serif, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.3px;
+}
+.numbers{
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.one, .two, .three, .fore {
+    font-size: 4em;
+    font-weight: 500;
+}
+.numberProgress{
+    box-sizing: border-box;
+    padding: 40px;
+    border-left: 1px solid #ffffff;
+}
+.numberProgress:nth-of-type(1){
+    border-left:none;
+}
+.infoProgress{
+    text-transform: none;
+}
+
+.history{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.historyTitle{
+    color: #000;
+    font-family: "Poppins", Sans-serif, sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.3px;
+}
+.historySpan{
+    color: #7a7a7a;
+    font-family: 'Varela Round',sans-serif;
+    line-height: 1.85714285714286;
+    font-size: 16px;
+    text-transform: none;
+
+}
+.historySpan a{
+    font-family: 'Varela Round',sans-serif;
+    color:#2355DA;
+}
+
+.historySpan a:hover{
+    color: #7a7a7a;
+}
+.threeDivs{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 60px 40px;
+}
+.h1Divs{
+    margin: 0 auto;
+    color: #000;
+    font-family: "Poppins", Sans-serif, sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.spanDivs{
+    color: #7a7a7a;
+    font-family: 'Varela Round',sans-serif;
+    line-height: 1.85714285714286;
+    font-size: 16px;
+    text-transform: none;
+    text-align: left;
+}
+.divs{
+    width: 30%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-right: 1px solid #7a7a7a;
+}
+.divs:nth-of-type(3){
+    border-right: none;
+}
+.spanDivs a{
+    font-family: 'Varela Round',sans-serif;
+    color:#2355DA;
+}
+
+.spanDivs a:hover{
+    color: #7a7a7a;
+}
+.processD{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+.processItems{
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.itemProc{
+    width: 30%;
+    text-align: left;
+    position: relative;
+    margin: 20px;
+}
+.opacity{
+    color: rgba(0,0,0,.06);
+    font-size: 7em;
+    font-weight: 100;
+    font-family: 'Varela Round',sans-serif;
+    position: absolute;
+}
+.title{
+    color: #000;
+    font-size: 2.5em;
+    font-weight: 500;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+.text{
+    color: #7a7a7a;
+    line-height: 1.85714285714286;
+    text-transform: none;
+}
+.itemProc a{
+    font-family: 'Varela Round',sans-serif;
+    color:#2355DA;
+}
+.itemProc a:hover{
+    color: #7a7a7a;
+}
+
+
+.blockGrey
+{
+    width: 100%;
+    background-color:#F9FAFD ;
+    margin: 0 auto;
+}
+
+.blockSmall{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.FAQ{
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+.detailsH1{
+    color: #000;
+    font-family: "Poppins", Sans-serif, sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.3px;
+    text-align: center;
+
+}
+.summaryB{
+    color: blue;
+}
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+.details{
+    outline: none;
+    border: 1px solid #3a3a3a;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all .2s linear;
+    color: #000;
+    font-family: "Poppins", Sans-serif, sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1.1em;
+    box-sizing: border-box;
+
+}
+.details:focus,
+summary:focus {
+    outline: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.summarySpan{
+    text-transform: none;
+    font-weight: normal;
+    display: block;
+    border-top:  1px solid #3a3a3a;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #545454;
+    font-family: "Varela Round", Sans-serif, sans-serif;
+    font-size: .8em;
+    line-height: 1.8em;
+    text-align: left;
+}
+.details:hover,
+summary:hover {
+    cursor: pointer;
+}
+.details summary:after{
+    content: " + ";
+    float: right;
+    padding-right: 10px;
+}
+.details[open] summary:after {
+    content: " - ";
+
+}
+.detailsFlex{
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.detailsItem{
+    width: 45%;
+    position: relative;
+}
+.detailsImg{
+    width: 45%;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color:#315FDA ;
+}
+.detailsImg img{
+    width: 100%;
+}
+
+@media screen and  (max-width : 1180px) {
+    .item_text{
+        width: 500px;
+        font-size: 15px;
+    }
+    .item_img{
+        width: 500px;
+    }
+
+}
+
+@media screen and (max-width: 1010px) {
+    .one, .two, .three, .fore {
+        font-size: 3em;
+
+    }
+    .details{
+        font-size: 1em;
+    }
+}
+
+@media screen and  (max-width : 1000px) {
+
+    .item_img{
+        -webkit-order: 1;
+        order: -1;
+    }
+    .block{
+        text-align: left;
+
+    }
+    .btn{
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+
+@media screen and (max-width: 880px) {
+    .one, .two, .three, .fore {
+        font-size: 2em;
+
+    }
+    .numberProgress{
+        border-left: none;
+    }
+    .h1Divs{
+        font-size: 1.2em;
+    }
+    .historyTitle{
+        font-size: 2em;
+    }
+    .divs{
+        width: 40%;
+        border-right: none;
+
+    }
+    .itemProc{
+        width: 50%;
+    }
+    .details{
+        font-size: .8em;
+    }
+
+
+}
+
+@media screen and  (max-width : 600px) {
+    .item_text{
+        width: 100%;
+        font-size: 10px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .item_img{
+        width: 300px;
+    }
+    .blockGrey{
+        width: 100%;
+        background-color:#F9FAFD;
+    }
+    .divs{
+        width: 100%;
+
+    }
+}
+@media screen and  (max-width : 768px) {
+
+    .divs{
+        width: 100%;
+
+    }
+    .threeDivs{
+        padding: 0;
+    }
+    .detailsItem{
+        width: 90%;
+        position: relative;
+    }
+    .detailsImg{
+        width: 100%;
+        padding: 40px;
+        box-sizing: border-box;
+        background-color:#315FDA ;
+    }
+}
+@media screen and (max-width: 500px){
+    .itemProc{
+        width: 100%;
+    }
+
+
+}

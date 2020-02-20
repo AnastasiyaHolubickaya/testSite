@@ -1,0 +1,247 @@
+.divForm{
+    width: 100%;
+    max-width: 1280px;
+    background-color:#2355DA ;
+    padding: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+.blockForm{
+    width: 60%;
+    background-color: #F9FAFD;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.formHead{
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+.formHead h1{
+
+    font-family: "Poppins", Sans-serif, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+.formHead span{
+    color: #000;
+    font-size: 13px;
+    text-transform: none;
+    line-height: 1.85714285714286;
+}
+
+.form{
+    width: 100%;
+display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.blockContacts{
+    background-color: transparent;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto;
+    width: 26%;
+
+
+}
+
+.form input[name='name']{
+    width: 100%;
+    height: 56px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    margin-right: 20px;
+
+}
+.form input[name='email']{
+    width: 100%;
+    height: 56px;
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+.form input[name='phone']{
+    width: 100%;
+    height: 56px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.form input[name='skype']{
+    width: 100%;
+    height: 56px;
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+.form input[name='message']{
+    width: 95%;
+    height: 68px;
+    background-color: #ffffff;
+    margin-top: 20px;
+
+}
+.form input[name='budget']{
+    width: 95%;
+    height: 56px;
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+.form input[type='button']{
+    background: #fff;
+    color: #2355da !important;
+    padding: 15px 50px;
+    border: 1px solid #2355da !important;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin-top: 20px;
+    -o-transition: all .3s;
+    transition: all .3s;
+    outline: none;
+}
+.form input[type='button']:hover{
+    background: #2355da;
+    color: #fff !important;
+}
+.labelError{
+    width: 80%;
+  font-size: 12px;
+    color: red;
+    position: absolute;
+}
+.elementForms{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 45%;
+}
+.elementForm{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.classInput{
+    border-color: grey;
+}
+.classInputError{
+    border-color: red;
+}
+.form input[type='submit']{
+    background-color: #ffffff;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: none;
+    border:1px solid #2456DA;
+    color: #2456DA;
+    padding: 10px 20px;
+    -o-transition: all .3s;
+    transition: all .3s;
+    margin-top: 20px;
+}
+.form input[type='submit']:hover{
+    background-color: #2456DA;
+    color: #ffffff;
+}
+.icon{
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+.icon img{
+    width: 100%;
+}
+.call{
+    background-color: transparent;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: none;
+    border:1px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 20px;
+    -o-transition: all .3s;
+    transition: all .3s;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.call a{
+    color: #ffffff;
+}
+.call a:hover{
+    color: #ffffff;
+}
+
+
+.contact h1{
+    font-family: "Poppins",Sans-serif;
+    font-weight: 700;
+}
+.contact h6{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.contact span{
+    font-family: 'Varela Round',sans-serif;
+    font-size: 12px;
+    text-transform: none;
+}
+.blok{
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.sendForm{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 50px;
+    line-height: 2;
+}
+.sendForm b{
+    font-family: "Poppins",Sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+
+}
+.sendForm span{
+    font-family: 'Varela Round',sans-serif;
+    font-size: 13px;
+    text-transform: none;
+}
+.sendForm span a{
+    color: #2456DA;
+    text-transform: none;
+}
+.sendForm span a:hover{
+    color: #2456DA;
+
+}
+
+
+
+
+
+@media screen and (max-width: 880px){
+    .blockForm{
+        width: 90%;
+    }
+    .divForm{
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+    .blockContacts{
+        width: 50%;
+    }
+
+
+}
