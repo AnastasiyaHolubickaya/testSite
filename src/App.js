@@ -32,7 +32,7 @@ import ScrollToTop from "./components/ScrollToTop";
 const App = (props) => {
 
   return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <ScrollToTop/>
             <div className="App">
                 <header>

@@ -118,7 +118,9 @@ hr{
         80% { left: -2250px;}
         100% { left: -2990px;}
     }
-
+    .title{
+        font-size: 1.5em;
+    }
 }
 
 
@@ -133,7 +135,9 @@ hr{
         80% { left: -1410px;}
         100% { left: -1880px;}
     }
-
+    .title{
+        font-size: 1.5em;
+    }
 }
 @media screen and (max-width:380px){
     .item{
@@ -146,5 +150,8 @@ hr{
         60% { left: -720px;}
         80% { left: -1080px;}
         100% { left: -1440px;}
+    }
+    .title{
+        font-size: 1.5em;
     }
 }

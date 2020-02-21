@@ -113,7 +113,9 @@ a.noBold{
     .item_img{
         width: 300px;
     }
-
+    .blockGrey{
+        width: 85%;
+    }
 }
 @media screen and  (max-width : 1000px) {
 

@@ -114,4 +114,7 @@ display: none;
     .blockGallery{
         width: 70%;
     }
+    .title{
+        font-size: 1.5em;
+    }
 }
