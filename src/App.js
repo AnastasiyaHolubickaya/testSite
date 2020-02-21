@@ -25,6 +25,7 @@ import Design from "./components/Design/Design";
 
 
 import {BrowserRouter, Route} from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 
@@ -32,6 +33,7 @@ const App = (props) => {
 
   return (
         <BrowserRouter>
+            <ScrollToTop/>
             <div className="App">
                 <header>
                     <Header/>

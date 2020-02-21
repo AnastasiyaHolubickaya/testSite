@@ -3,8 +3,10 @@
     top:88px;
     width: 100%;
     background-color:#F9F9F9;
-
+    z-index: 100;
 }
+
+
 .menuSidebar ul.sidebar{
     list-style-type: none;
     display: block;
