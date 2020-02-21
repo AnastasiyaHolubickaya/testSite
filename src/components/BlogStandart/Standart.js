@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
 import c from './Standart.module.css'
-import block3 from "../../img/blog03-free-img.jpg";
+//import block3 from "../../img/blog03-free-img.jpg";
 
 
 
@@ -25,7 +25,7 @@ let Standart=(props) =>{
                 <div className={c.page_standart}>
 
                     <h3>Standartisation between design tool</h3>
-                    <NavLink className={c.a} to="#comment">Live a comment /</NavLink><NavLink className={c.a} to="/blog">uncategorized</NavLink>
+                    <a className={c.a} href="#comment">Live a comment /</a><a className={c.a} href="/blog">uncategorized</a>
                     <div className={c.foto1}>
                         <img src={img1} alt="foto"/>
                     </div>

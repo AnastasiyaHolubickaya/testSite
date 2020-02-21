@@ -30,7 +30,7 @@ class BlockForm extends React.Component {
         let nam = event.target.name;
         let val = event.target.value;
         let nameValid = this.state.nameValid;
-        let emailValid=this.state.emailValid;
+       // let emailValid=this.state.emailValid;
         let phoneValid= this.state.phoneValid;
 
 
@@ -51,13 +51,17 @@ class BlockForm extends React.Component {
             case 'budget':
                 this.setState({[nam]: val});
                 break;
+            default:
+                break;
+
+
         }
 
     };
 
 
     handleSubmit(event) {
-        if(this.state.name!='' && this.state.email!='' && this.state.phone!='' && this.state.skype!='' && this.state.message!='' && this.state.budget!=''){
+        if(this.state.name!=='' && this.state.email!=='' && this.state.phone!=='' && this.state.skype!=='' && this.state.message!=='' && this.state.budget!==''){
             this.setState({formValide: true});
            // alert('Я улетел!');//  !!!!!!!!!!!!!!!!!!!!!!!!!
             event.preventDefault();
@@ -78,7 +82,7 @@ class BlockForm extends React.Component {
                         <h1>  GET IN TOUCH </h1>
                         <span> We’re here for you, and we’re wearing our thinking caps. But first swing by our fantastic Help Center for all your Sparkle Appz product and technical needs! </span>
                     </div>
-                    <div style={(this.state.formSubmit !=true) ? { display:"block" } : { display:"none" }}>
+                    <div style={(this.state.formSubmit !==true) ? { display:"block" } : { display:"none" }}>
                         <form className={classes.form}>
 
                             <div className={classes.elementForms}>
@@ -86,8 +90,8 @@ class BlockForm extends React.Component {
                                        type="text" value={this.state.name} name="name" onChange={this.handleChange}
                                        placeholder="Name" maxLength="10"/>
                                 <label className={classes.labelError}
-                                       style={(this.state.nameValid != null || (this.state.formValide == false && this.state.name == '')) ? {display: "block"} : {display: "none"}}>
-                                    {(this.state.name == '' && this.state.formValide == false) ? 'This field is required.' : 'Input currect Name.'}
+                                       style={(this.state.nameValid != null || (this.state.formValide === false && this.state.name === '')) ? {display: "block"} : {display: "none"}}>
+                                    {(this.state.name === '' && this.state.formValide === false) ? 'This field is required.' : 'Input currect Name.'}
                                 </label>
                             </div>
 
@@ -98,8 +102,8 @@ class BlockForm extends React.Component {
                                        pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
                                        minLength="4" maxLength="30" required maxLength="20"/>
                                 <label className={classes.labelError}
-                                       style={(this.state.emailValid != null || (this.state.formValide == false && this.state.email == '')) ? {display: "block"} : {display: "none"}}>
-                                    {(this.state.email == '' && this.state.formValide == false) ? 'This field is required.' : 'Input currect e-mail.'}
+                                       style={(this.state.emailValid != null || (this.state.formValide === false && this.state.email === '')) ? {display: "block"} : {display: "none"}}>
+                                    {(this.state.email === '' && this.state.formValide === false) ? 'This field is required.' : 'Input currect e-mail.'}
                                 </label>
                             </div>
 
@@ -108,8 +112,8 @@ class BlockForm extends React.Component {
                                 <input type="phone" value={this.state.phone} name="phone" onChange={this.handleChange}
                                        placeholder="Phone" maxLength="10"/>
                                 <label className={classes.labelError}
-                                       style={(this.state.phoneValid != null || (this.state.formValide == false) && this.state.phone == '') ? {display: "block"} : {display: "none"}}>
-                                    {(this.state.phone == '' && this.state.formValide == false) ? 'This field is required.' : 'Input currect phone number.'}
+                                       style={(this.state.phoneValid != null || (this.state.formValide === false) && this.state.phone === '') ? {display: "block"} : {display: "none"}}>
+                                    {(this.state.phone === '' && this.state.formValide === false) ? 'This field is required.' : 'Input currect phone number.'}
                                 </label>
                             </div>
 
@@ -118,7 +122,7 @@ class BlockForm extends React.Component {
                                 <input type="text" value={this.state.skype} name="skype" onChange={this.handleChange}
                                        placeholder="Skype" maxLength="15"/>
                                 <label className={classes.labelError}
-                                       style={(this.state.formValide == false && this.state.skype == '') ? {display: "block"} : {display: "none"}}>
+                                       style={(this.state.formValide === false && this.state.skype === '') ? {display: "block"} : {display: "none"}}>
                                     This field is required.
                                 </label>
                             </div>
@@ -128,7 +132,7 @@ class BlockForm extends React.Component {
                                 <input type="textarea" value={this.state.message} name="message"
                                        onChange={this.handleChange} placeholder="Message" required maxLength="250"/>
                                 <label className={classes.labelError}
-                                       style={(this.state.formValide == false && this.state.message == '') ? {display: "block"} : {display: "none"}}>
+                                       style={(this.state.formValide === false && this.state.message === '') ? {display: "block"} : {display: "none"}}>
                                     This field is required.
                                 </label>
                             </div>
@@ -138,7 +142,7 @@ class BlockForm extends React.Component {
                                 <input type="text" value={this.state.budget} name="budget" onChange={this.handleChange}
                                        placeholder="Budget" maxLength="10"/>
                                 <label className={classes.labelError}
-                                       style={(this.state.formValide == false && this.state.budget == '') ? {display: "block"} : {display: "none"}}>
+                                       style={(this.state.formValide === false && this.state.budget === '') ? {display: "block"} : {display: "none"}}>
                                     This field is required.
                                 </label>
                             </div>
@@ -150,10 +154,10 @@ class BlockForm extends React.Component {
                     </div>
 
 
-                <div className={classes.sendForm} style={(this.state.formSubmit ==true) ? { display:"block" } : { display:"none" }}>
+                <div className={classes.sendForm} style={(this.state.formSubmit ===true) ? { display:"block" } : { display:"none" }}>
 
                     <b> Thanks for contacting us! We will be in touch with you shortly.</b><br/>
-                    <span> <NavLink href="/#home">SparkleAppz</NavLink> is a professional IT solution and web development company. We provide complete web design and IT services to make your product successful in market with eye-catching outlook and appropriate web design. We put together our delicate, exceptional methods by building in our personal intensive experience. Our own strategy supplies the drive and ready-to-use design necessary to deliver excellent.</span>
+                    <span> <NavLink to="#">SparkleAppz</NavLink> is a professional IT solution and web development company. We provide complete web design and IT services to make your product successful in market with eye-catching outlook and appropriate web design. We put together our delicate, exceptional methods by building in our personal intensive experience. Our own strategy supplies the drive and ready-to-use design necessary to deliver excellent.</span>
                 </div>
             </div>
                 <div className={classes.blockContacts}>
@@ -171,9 +175,9 @@ class BlockForm extends React.Component {
                         <span>100 city centre drive mississauga,<br/>
 Ontario, Canada.</span><br/>
                     </div>
-                        <button className={classes.call}><NavLink to="tel:+917737791591">call us</NavLink> </button>
-                        <button className={classes.call}><NavLink to="whatsapp://send?text=<?php echo urlencode( '<TEXT>' ); ?>"
-                                                            data-action="share/whatsapp/share">Whatsapp Us</NavLink> </button>
+                        <button className={classes.call}><a href="tel:+917737791591">call us</a> </button>
+                        <button className={classes.call}><a href="whatsapp://send?text=<?php echo urlencode( '<TEXT>' ); ?>"
+                                                            data-action="share/whatsapp/share">Whatsapp Us</a> </button>
 
                     </div>
 

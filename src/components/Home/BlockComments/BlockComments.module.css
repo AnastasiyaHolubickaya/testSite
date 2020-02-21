@@ -9,7 +9,7 @@
 }
 .title{
     font-family: "Poppins",sans-serif;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
@@ -89,6 +89,9 @@
     text-transform: capitalize;
     text-align: center;
 }
+hr{
+    width: 50px;
+}
 @media screen and (max-width:1024px ){
     .item{
         width: 1000px;
@@ -103,7 +106,7 @@
     }
 
 }
-@media screen and (max-width:768px ){
+@media screen  and  (min-width:501px) and  (max-width:768px ){
     .item{
         width: 750px;
     }
@@ -113,26 +116,26 @@
         40% { left: -750px;}
         60% { left: -1500px;}
         80% { left: -2250px;}
-        100% { left: -2950px;}
+        100% { left: -2990px;}
     }
 
 }
 
 
-@media screen and (max-width:500px ){
+@media screen and (min-width:381px) and (max-width:500px ){
     .item{
         width: 470px;    }
     @keyframes move {
         0%  { left: 0; }
         20%  { left: 0; }
-        40% { left: -470px;}
-        60% { left: -940px;}
-        80% { left: -1390px;}
-        100% { left: -1840px;}
+        40% { left: -480px;}
+        60% { left: -950px;}
+        80% { left: -1410px;}
+        100% { left: -1880px;}
     }
 
 }
-@media screen and (max-width:380px ){
+@media screen and (max-width:380px){
     .item{
         width: 360px;
     }

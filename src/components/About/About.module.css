@@ -290,6 +290,7 @@ details summary::-webkit-details-marker {
     display: block;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 10px;
     transition: all .2s linear;
     color: #000;
     font-family: "Poppins", Sans-serif, sans-serif;
@@ -376,7 +377,6 @@ summary:hover {
 @media screen and  (max-width : 1000px) {
 
     .item_img{
-        -webkit-order: 1;
         order: -1;
     }
     .block{
@@ -450,6 +450,7 @@ summary:hover {
     .detailsItem{
         width: 90%;
         position: relative;
+        margin-bottom: 20px;
     }
     .detailsImg{
         width: 100%;

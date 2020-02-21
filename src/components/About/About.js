@@ -18,7 +18,7 @@ const  About = (props) =>{
 
 
     return (
-            <div className={classes.aboutPage}>
+            <div id='/about' className={classes.aboutPage}>
 
                 <div className={classes.block}>
 
@@ -29,8 +29,8 @@ const  About = (props) =>{
                             <span className={classes.info}><NavLink to ='#'>Sparkle Appz</NavLink> is an IT company in India, offering quality software
                                 related solutions including <NavLink to ="#">Mobile Application Development,</NavLink>
                                 <NavLink to='#'> SEO, </NavLink><NavLink to='#'> Unity 3D, </NavLink> and <NavLink to='#'> Web Design and Development. </NavLink>
-                                We believe in <strong>“Complete Customer Satisfaction”</strong>
-                                as our definition of quality.
+                                We believe in <strong>“Complete Customer Satisfaction”</strong>as our definition of quality.
+
                             <p />  We focus to deliver our expertise to our
                                 clients within time and make sure that our solutions be aesthetic,
                                 technically functional, user-friendly and responsive.</span>
@@ -48,28 +48,28 @@ const  About = (props) =>{
                 <div className={classes.blockItem4}>
                    <div className={classes.history}>
                        <h1 className={classes.historyTitle}>our history</h1>
-                       <span className={classes.historySpan}><NavLink to="/#home">Sparkle Appz </NavLink> was started in 2011 by a small group of dedicated software professionals. We started our company with <NavLink
-                           to="/#home">web application  </NavLink> development and soon embarked <NavLink to="/#home">mobile app development</NavLink>  after 1 successful year of productivity.
+                       <span className={classes.historySpan}><NavLink to="#">Sparkle Appz </NavLink> was started in 2011 by a small group of dedicated software professionals. We started our company with <NavLink
+                           to="#">web application  </NavLink> development and soon embarked <NavLink to="#">mobile app development</NavLink>  after 1 successful year of productivity.
 
 <br/>Today, SparkleAppz being one of the best software company in the Jodhpur region, with a team of 10 skilled developers, have developed more than 100 applications with <b> 90+ satisfied</b> <NavLink
-                               to="/#home">clients </NavLink> . During this decade, we have been working closely with our clients from concept to delivery, helping to change their visions into <NavLink
-                               to="/#home">attractive</NavLink> <b> and useful products</b> . Every project we deliver is given our supreme attention.</span>
+                               to="#">clients </NavLink> . During this decade, we have been working closely with our clients from concept to delivery, helping to change their visions into <NavLink
+                               to="#">attractive</NavLink> <b> and useful products</b> . Every project we deliver is given our supreme attention.</span>
                    </div>
                 </div>
                 <div className={classes.blockWidth}>
                     <div className={classes.threeDivs}>
                         <div className={classes.divs}>
                             <h1 className={classes.h1Divs}>who we are</h1>
-                            <span className={classes.spanDivs}>We are a group of dedicated <NavLink to="/#home">IT professionals</NavLink> , providing software and digital marketing solution. </span>
+                            <span className={classes.spanDivs}>We are a group of dedicated <NavLink to="#">IT professionals</NavLink> , providing software and digital marketing solution. </span>
                         </div>
                         <div className={classes.divs}>
                             <h1 className={classes.h1Divs}>our mission</h1>
-                            <span className={classes.spanDivs}>We believe in delivering unique and <NavLink to="/#home">reliable software solutions</NavLink>  to assist our clients in improving IT efficiency and business profitably.</span>
+                            <span className={classes.spanDivs}>We believe in delivering unique and <NavLink to="#">reliable software solutions</NavLink>  to assist our clients in improving IT efficiency and business profitably.</span>
                         </div>
                         <div className={classes.divs}>
                             <h1 className={classes.h1Divs}>what we do</h1>
                             <span className={classes.spanDivs}> To provide the best solutions to the clients as per their business needs by providing <NavLink
-                                to="/#home">customized development</NavLink>  services.</span>
+                                to="#">customized development</NavLink>  services.</span>
                         </div>
                     </div>
 

@@ -34,3 +34,58 @@
 .infoProgress{
     text-transform: none;
 }
+
+@media screen and (max-width: 1024px) {
+    .one, .two, .three, .fore {
+        font-size: 3em;
+    }
+    .counterH1{
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 864px) {
+    .one, .two, .three, .fore {
+        font-size: 2em;
+    }
+    .numberProgress{
+
+        padding: 20px;
+        border-left: none;
+    }
+}
+@media screen and (max-width: 640px) {
+    .one, .two, .three, .fore {
+        font-size: 1em;
+    }
+    .numberProgress{
+        padding: 10px;
+        border-left: none;
+    }
+    .counterH1{
+        font-size: 1em;
+    }
+    .counterItems{
+        padding: 10px;
+    }
+    .infoProgress{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .one, .two, .three, .fore {
+        font-size: .8em;
+    }
+    .numberProgress{
+        padding: 5px;
+        border-left: none;
+    }
+    .counterH1{
+        font-size: .8em;
+    }
+    .counterItems{
+        padding: 10px;
+    }
+    .infoProgress{
+        font-size: 10px;
+    }
+}

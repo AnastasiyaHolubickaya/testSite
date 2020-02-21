@@ -2,7 +2,7 @@ import React from 'react';
 import phone from '../../img/smallIcon/phone_icn.png';
 import email from '../../img/smallIcon/email_icn.png';
 import classes from './Header.module.css'
-import {NavLink} from "react-router-dom";
+//import {NavLink} from "react-router-dom";
 
 
 
@@ -11,11 +11,11 @@ const  Header = () =>{
         <div className={classes.block}>
             <div className={classes.item_phone}>
                 <img src={phone} alt="icon phone"/>
-                <span><NavLink to='tel:+91-7737791591'> +91-7737791591</NavLink> </span>
+                <span><a href='tel:+91-7737791591'> +91-7737791591</a> </span>
             </div>
             <div className={classes.item_mail}>
                 <img src={email} alt="icon email"/>
-                <span> <NavLink to='mailto:info@sparkleappz.com'>info@sparkleappz.com</NavLink></span>
+                <span> <a href='mailto:info@sparkleappz.com'>info@sparkleappz.com</a></span>
             </div>
 
         </div>

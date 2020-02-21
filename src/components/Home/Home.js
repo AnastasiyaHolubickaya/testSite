@@ -31,7 +31,7 @@ const  Home = (props) =>{
 
       return (
 
-        <div  className={classes.blockWidth}>
+        <div id='h' className={classes.blockWidth}>
             {blocks}
             <div className={classes.blockItem}>
                 {element2}

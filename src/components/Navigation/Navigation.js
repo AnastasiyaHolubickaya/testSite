@@ -14,15 +14,23 @@ import butgerIcon from '../../img/icon/burgerIcon.png';
 class Navigation extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {menuDisplay: false};
-        this.handleClick = this.handleClick.bind(this);
+        this.state = {
+            menuDisplay: false
+
+        };
+        this.handleClickBurger = this.handleClickBurger.bind(this);
     }
 
-    handleClick () {
-        this.state.menuDisplay ? this.setState(state =>({menuDisplay: false})) : this.setState(state =>({menuDisplay: true }));
-
-
+    handleClickBurger () {
+        this.state.menuDisplay ? this.setState(state =>({menuDisplay: false})) : this.setState(state =>({menuDisplay: true}));
     };
+   /* handleClickItem () {
+        this.state.menuDisplay ? this.setState(state =>({menuDisplay: false})) : this.setState(state =>({menuDisplay: true}));
+    };
+    */
+
+
+
 
     render(){
         return (
@@ -30,33 +38,33 @@ class Navigation extends React.Component {
                 <div className={classes.item_img}>
                     <NavLink to="/about"><img src={logo} alt="logotype"/></NavLink>
                 </div>
-                <div   className={classes.burger} onClick={(e) => this.handleClick(e)}    style={this.state.menuDisplay ?{ backgroundImage:`url(${crossIcon})` }:{ backgroundImage:`url(${butgerIcon})` }} > </div>
+                <div   className={classes.burger} onClick={(e) => this.handleClickBurger(e)}    style={this.state.menuDisplay ?{ backgroundImage:`url(${crossIcon})` }:{ backgroundImage:`url(${butgerIcon})` }} > </div>
 
-                <ListDropdown  menuDisplay={this.state.menuDisplay}/>
+                <ListDropdown  menuDisplay={this.state.menuDisplay} callbackClickBurger={this.handleClickBurger}/>
 
                 <div  className={classes.item_menu}>
 
-                    <ul className={classes.ul_menu}>
-                        <li  className={classes.li_menu}><NavLink to="/" activeClassName={classes.active}>Home</NavLink></li>
-                        <li className={classes.li_menu}><NavLink to="/about" activeClassName={classes.active}>About</NavLink></li>
-                        <li  className={`${classes.li_menu} ${classes.li_block}`}><NavLink to="/"> Service&#8195;&#709;</NavLink>
+                    <ul className={classes.ul_menu}  >
+                        <li  className={classes.li_menu}><NavLink to="/#" activeClassName={classes.active}>Home</NavLink></li>
+                        <li  className={classes.li_menu}><NavLink to="/about" activeClassName={classes.active}>About</NavLink></li>
+                        <li  className={`${classes.li_menu} ${classes.li_block}`}><NavLink to="#"> Service&#8195;&#709;</NavLink>
                             <ul className={classes.ul_dropdoun}>
                                 <li className={classes.li_dropdoun}><NavLink to="/development_IOS">ios app development</NavLink> </li>
                                 <li className={classes.li_dropdoun}><NavLink to="/development_android">android app development</NavLink></li>
                                 <li className={classes.li_dropdoun}><NavLink to="/development_website">website development</NavLink></li>
-                                <li className={classes.li_dropdoun}><NavLink to="/">unity 3D game development</NavLink></li>
-                                <li className={classes.li_dropdoun}><NavLink to="/">digital marketing service</NavLink></li>
-                                <li className={classes.li_dropdoun}><NavLink to="/">UI/UX design services</NavLink></li>
+                                <li className={classes.li_dropdoun}><NavLink to="#">unity 3D game development</NavLink></li>
+                                <li className={classes.li_dropdoun}><NavLink to="#">digital marketing service</NavLink></li>
+                                <li className={classes.li_dropdoun}><NavLink to="#">UI/UX design services</NavLink></li>
                             </ul>
 
                         </li>
-                        <li  className={classes.li_menu}><NavLink to="/portfolio" activeClassName={classes.active}>Portfolio</NavLink></li>
+                        <li  className={classes.li_menu}><NavLink to="/portfolio" activeClassName={classes.active} >Portfolio</NavLink></li>
                         <li  className={classes.li_menu}><NavLink to="/blog" activeClassName={classes.active}>Blog</NavLink></li>
                         <li  className={classes.li_menu}><NavLink to ="/contact" activeClassName={classes.active}>Contact</NavLink></li>
                     </ul>
                     <div  className={classes.btn}>
                         <NavLink to="/contact"> <button className={classes.btn1}>get a free quote</button></NavLink>
-                        <NavLink to="tel:+917737791591"> <button className={classes.btn2}>call <big>&#128381;</big></button></NavLink>
+                        <a href="tel:+917737791591"> <button className={classes.btn2}>call <big>&#128381;</big></button></a>
                     </div>
 
                 </div>

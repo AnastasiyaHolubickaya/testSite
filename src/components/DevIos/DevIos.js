@@ -28,8 +28,8 @@ let DevIos=(props) =>{
                 <div className={classes.item_text1}>
                     <span className={classes.h1}>ios app</span><br/>
                     <span className={classes.h1Small}>development</span><br/>
-                    <span  className={classes.textInfo}><NavLink to="/">SparkleAppz </NavLink>  have experience of more than 10 years in making world’s leading brands go mobile by developing inspiring apps in Apple platform. Add boost to your business needs by using our expertise in <NavLink
-                        to="/"> iOS app development</NavLink>  to build beautiful, <NavLink to="/"> engaging</NavLink>  and <NavLink to="/"> seamless </NavLink> app.</span>
+                    <span  className={classes.textInfo}><NavLink to="">SparkleAppz </NavLink>  have experience of more than 10 years in making world’s leading brands go mobile by developing inspiring apps in Apple platform. Add boost to your business needs by using our expertise in <NavLink
+                        to="#"> iOS app development</NavLink>  to build beautiful, <NavLink to="#"> engaging</NavLink>  and <NavLink to="#"> seamless </NavLink> app.</span>
                     <br/>
                     <NavLink to="/portfolio"> <button className={classes.btn}>Our Portfolio <b> &#8594;</b></button></NavLink>
                 </div>
@@ -60,10 +60,10 @@ let DevIos=(props) =>{
 
                 <div className={classes.block2Items}>
                 <h1 className={classes.h1Block3}>build an app for ios devices</h1>
-                <span className={classes.textBlock3}>Our talented  <NavLink to="/">iOS app developers</NavLink>  provide app development services by building <NavLink
-                    to="/"> applications</NavLink>  that would work equally well across all <NavLink to="/"> Apple devices.</NavLink> Our team believe in helping you in every step from solution <NavLink
-                    to="/">design </NavLink>  to delivery of the product. We also offer ongoing maintenance to keeps solutions healthy to deal with changing <NavLink
-                    to="/">technical </NavLink>  and <NavLink to="/">business </NavLink> environment. </span>
+                <span className={classes.textBlock3}>Our talented  <NavLink to="/development_android">iOS app developers</NavLink>  provide app development services by building <NavLink
+                    to="#"> applications</NavLink>  that would work equally well across all <NavLink to="/development_IOS"> Apple devices.</NavLink> Our team believe in helping you in every step from solution <NavLink
+                    to="#">design </NavLink>  to delivery of the product. We also offer ongoing maintenance to keeps solutions healthy to deal with changing <NavLink
+                    to="#">technical </NavLink>  and <NavLink to="#">business </NavLink> environment. </span>
                 <div className={classes.figureBlock3}>
                     <figure>
                         <img src={e.img1} alt="foto"/>

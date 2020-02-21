@@ -16,7 +16,7 @@ let Playful=(props) =>{
         <div className={c.blockFull}>
             <div id='playful' className={c.fulPage}>
                 <h3>Playful illustration</h3>
-                <NavLink className={c.a} to="#comment">Live a comment /</NavLink><NavLink className={c.a} to="/blog">uncategorized</NavLink>
+                <a className={c.a} href="#comment">Live a comment /</a><a className={c.a} href="/blog">uncategorized</a>
                 <div className={c.foto1}>
                     <img src={block5} alt="foto"/>
                 </div>

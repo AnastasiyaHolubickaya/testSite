@@ -35,13 +35,13 @@ class Block6 extends React.Component {
                 </div>
             )}
             </div>
-            <NavLink  to="/portfolio"> <button className={classes.btn}>check out other project &#8594; </button></NavLink>
+            <NavLink to="/portfolio"> <button className={classes.btn}>check out other project &#8594; </button></NavLink>
 
             </div>
 
     );
     }
-};
+}
 export default Block6;
 
 

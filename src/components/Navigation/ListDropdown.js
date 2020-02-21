@@ -8,35 +8,40 @@ class Navigation extends React.Component {
     constructor(props) {
         super(props);
         this.state = {Display: false};
+        this.state = {DisplayMenuSidebar: false};
+
         this.handleClick = this.handleClick.bind(this);
     }
     handleClick () {
         this.state.Display ? this.setState(state =>({Display: false})) : this.setState(state =>({Display: true }));
     };
+    handleClickMenuSidebar () {
+        this.props.callbackClickBurger();
+    };
 
     render(){
     return(
-        <div   className={classes.menuSidebar} style={this.props.menuDisplay?{ display:"block"}:{ display:"none" }} >
+        <div   className={classes.menuSidebar} style={(this.props.menuDisplay===true|| this.state.DisplayMenuSidebar===true)?{ display:"block"}:{ display:"none" }} >
             <ul  className={classes.sidebar}>
-                <li><NavLink className={`${classes.active} ${classes.uppercase}`} to='/home'> home</NavLink></li>
-                <li><NavLink className={classes.uppercase} to='/about'> about</NavLink></li>
-                <li><NavLink className={classes.uppercase} to='/' onClick={(e) => this.handleClick(e)}> services</NavLink>
+                <li><NavLink className={`${classes.active} ${classes.uppercase}`} to='' onClick={(e) => this.handleClickMenuSidebar(e)}> home</NavLink></li>
+                <li><NavLink className={classes.uppercase} to='/about' onClick={(e) => this.handleClickMenuSidebar(e)}>about</NavLink></li>
+                <li><NavLink className={classes.uppercase} to='#' onClick={(e) => this.handleClick(e)}> services</NavLink>
                     <ul className={classes.qwert} style={this.state.Display?{ display:"block"}:{ display:"none" }} >
-                        <li className={classes.qwertLi}><NavLink to="/development_IOS"> > ios app development</NavLink> </li>
-                        <li className={classes.qwertLi}><NavLink to="/development_android"> > android app development</NavLink></li>
-                        <li className={classes.qwertLi}><NavLink to="/development_website"> > website development</NavLink></li>
-                        <li className={classes.qwertLi}><NavLink to="/"> > unity 3D game development</NavLink></li>
-                        <li className={classes.qwertLi}><NavLink to="/"> > digital marketing service</NavLink></li>
-                        <li className={classes.qwertLi}><NavLink to="/"> > UI/UX design services</NavLink></li>
+                        <li className={classes.qwertLi}><NavLink to="/development_IOS" onClick={(e) => this.handleClickMenuSidebar(e)}> > ios app development</NavLink> </li>
+                        <li className={classes.qwertLi}><NavLink to="/development_android" onClick={(e) => this.handleClickMenuSidebar(e)}> > android app development</NavLink></li>
+                        <li className={classes.qwertLi}><NavLink to="/development_website" onClick={(e) => this.handleClickMenuSidebar(e)}> > website development</NavLink></li>
+                        <li className={classes.qwertLi}><NavLink to="#" onClick={(e) => this.handleClickMenuSidebar(e)}> > unity 3D game development</NavLink></li>
+                        <li className={classes.qwertLi}><NavLink to="#" onClick={(e) => this.handleClickMenuSidebar(e)}> > digital marketing service</NavLink></li>
+                        <li className={classes.qwertLi}><NavLink to="#" onClick={(e) => this.handleClickMenuSidebar(e)}> > UI/UX design services</NavLink></li>
                     </ul>
                 </li>
-                <li><NavLink className={classes.uppercase} to='/portfolio'> portfolio</NavLink></li>
-                <li><NavLink className={classes.uppercase} to='/blog'> blog</NavLink></li>
-                <li><NavLink className={classes.uppercase} to='/contact'> contact</NavLink></li>
+                <li><NavLink className={classes.uppercase} to='/portfolio' onClick={(e) => this.handleClickMenuSidebar(e)}> portfolio</NavLink></li>
+                <li><NavLink className={classes.uppercase} to='/blog' onClick={(e) => this.handleClickMenuSidebar(e)}> blog</NavLink></li>
+                <li><NavLink className={classes.uppercase} to='/contact' onClick={(e) => this.handleClickMenuSidebar(e)}> contact</NavLink></li>
             </ul>
             <div  className={classes.btn}>
-                <NavLink to="/contact"> <button className={classes.btn1}>get a free quote</button></NavLink>
-                <NavLink to="tel:+917737791591"> <button className={classes.btn2}>call <big>&#128381;</big></button></NavLink>
+                <NavLink to="/contact"> <button className={classes.btn1}   onClick={(e) => this.handleClickMenuSidebar(e)}  >get a free quote</button> </NavLink>
+                <a href="tel:+917737791591"> <button className={classes.btn2}   onClick={(e) => this.handleClickMenuSidebar(e)}    >call <big>&#128381;</big></button> </a>
             </div>
         </div>
 
@@ -50,7 +55,7 @@ class Navigation extends React.Component {
 
 
 
-}
+};
 export default Navigation;
 
 

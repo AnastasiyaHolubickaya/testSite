@@ -18,10 +18,10 @@ import {NavLink} from "react-router-dom";
 const LinkIcon = (props)=>{
   return(
       <div className={classes.item_icon}>
-          <NavLink to={props.address}>
+          <a href={props.address}>
               <img src={props.path} alt=""/>
               <span>{props.text}</span>
-          </NavLink>
+          </a>
       </div>
   )
 };
@@ -32,7 +32,7 @@ const  Footer = (props) =>{
      let linkImportant = props.menuSidebar.map(e=>
         <div className={classes.item_link}>
             <img src={icon} alt=""/>
-            <NavLink  activeClassName={classes.active} style={{color:'#000000'}} to={e.url}> {e.label} </NavLink>
+            <NavLink activeClassName={classes.active} style={{color:'#000000'}} to={e.url}> {e.label} </NavLink>
         </div>
      );
 

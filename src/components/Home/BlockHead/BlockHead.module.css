@@ -46,8 +46,8 @@
 
 }
 @media screen and  (max-width : 600px) {
-    .item_text{
-
+    .item_text span{
+        font-size: 20px;
     }
     .item_img{
         width: 300px;
@@ -58,7 +58,6 @@
 @media screen and  (max-width : 1000px) {
 
     .item_img{
-        -webkit-order: 1;
         order: -1;
     }
     .block{
@@ -66,7 +65,7 @@
         padding-left: 0;
     }
     .item_text span{
-        font-size: 26px;
+        font-size: 20px;
     }
 
 }

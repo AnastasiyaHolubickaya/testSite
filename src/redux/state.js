@@ -514,29 +514,29 @@ state = {
             },
             {
                 label:'unity 3D game development',
-                url:'/development_unity'
+                url:''
             },
             {
                 label:'digital marketing service',
-                url:'/marketing'
+                url:''
             },
             {
                 label:'UI/UX design service',
-                url:'/design'
+                url:''
             },
         ],
         menuSidebar:[
             {
                 label:'home',
-                url:'/'
+                url:''
             },
             {
                 label:'about',
-                url:'/about'
+                url:'/about#/about'
             },
             {
                 label:'services',
-                url:'/'
+                url:''
             },
             {
                 label:'portfolio',
