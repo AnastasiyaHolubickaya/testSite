@@ -102,10 +102,10 @@ span{
 @media screen and  (max-width : 1000px) {
 
     .item_img{
-        -webkit-order: 1;
         order: -1;
     }
     .block{
         text-align: center;
+        padding-left: 0;
     }
 }

@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 import classes from './Adventurous.module.css';
 import block3 from "../../img/blog03-free-img.jpg";
 import adv from '../../img/adv.png';
-
+import Scrollchor from 'react-scrollchor';
 
 
 
@@ -20,7 +20,7 @@ let Adventurous=(props) =>{
         <div className={classes.block}>
             <div className={classes.page}>
                 <h3>More adventurous colors</h3>
-                <NavLink className={classes.a} to="#comment">Live a comment /</NavLink><NavLink className={classes.a} to="/blog">uncategorized</NavLink>
+                <Scrollchor className={classes.a} to="#comment">Live a comment /</Scrollchor><NavLink className={classes.a} to="/blog">uncategorized</NavLink>
                 <div className={classes.foto1}>
                     <img src={block3} alt="foto"/>
                 </div>

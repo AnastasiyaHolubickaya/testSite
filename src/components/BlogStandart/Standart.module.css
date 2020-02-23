@@ -341,6 +341,12 @@ input#check{
         width: 100%;
     }
 }
+@media screen and (max-width: 600px) {
+
+    .page_standart {
+        padding: 30px;
+    }
+}
 @media screen and (max-width: 450px){
     .info{
         bottom: 0;

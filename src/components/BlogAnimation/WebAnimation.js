@@ -2,7 +2,7 @@ import React from 'react';
 import {NavLink} from "react-router-dom";
 import classes from './Animation.module.css'
 import block3 from '../../img/blog03-free-img.jpg'
-
+import Scrollchor from 'react-scrollchor';
 
 
 
@@ -19,7 +19,7 @@ let quote = props.animation[0].quote;
             <div className={classes.block}>
                 <div className={classes.page}>
                     <h3>Web animation</h3>
-                    <NavLink className={classes.a} to="#comment">Live a comment /</NavLink><NavLink className={classes.a} to="/blog">uncategorized</NavLink>
+                    <Scrollchor className={classes.a} to="#comment">Live a comment /</Scrollchor><NavLink className={classes.a} to="/blog">uncategorized</NavLink>
                     <div className={classes.foto1}>
                         <img src={block3} alt="foto"/>
                     </div>

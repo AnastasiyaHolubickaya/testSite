@@ -3,6 +3,8 @@ import {NavLink} from "react-router-dom";
 import c from './Playful.module.css'
 import block5 from '../../img/blog05-free-img.jpg';
 import pic5 from '../../img/pic5.png';
+import Scrollchor from 'react-scrollchor';
+
 
 let Playful=(props) =>{
    // let img1 = props.animation[0].img1;
@@ -14,9 +16,9 @@ let Playful=(props) =>{
     return(
 
         <div className={c.blockFull}>
-            <div id='playful' className={c.fulPage}>
+            <div  className={c.fulPage}>
                 <h3>Playful illustration</h3>
-                <a className={c.a} href="#comment">Live a comment /</a><a className={c.a} href="/blog">uncategorized</a>
+                <Scrollchor className={c.a} to="#comment">Live a comment /</Scrollchor><NavLink className={c.a} to="/blog">uncategorized</NavLink>
                 <div className={c.foto1}>
                     <img src={block5} alt="foto"/>
                 </div>
