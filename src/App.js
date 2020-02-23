@@ -24,7 +24,7 @@ import Design from "./components/Design/Design";
 
 
 
-import {BrowserRouter, Route} from "react-router-dom";
+import {BrowserRouter, HashRouter, Route} from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 
 
@@ -32,7 +32,7 @@ import ScrollToTop from "./components/ScrollToTop";
 const App = (props) => {
 
   return (
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <HashRouter basename={process.env.PUBLIC_URL}>
             <ScrollToTop/>
             <div className="App">
                 <header>
@@ -124,7 +124,7 @@ const App = (props) => {
                     <Footer menuSidebar = {props.appState.navigation.menuSidebar} menuData = {props.appState.navigation.menuData} />
                 </div>
             </div>
-        </BrowserRouter>
+        </HashRouter>
   );
 };
 
