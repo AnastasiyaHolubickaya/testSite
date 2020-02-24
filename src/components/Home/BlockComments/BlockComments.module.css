@@ -130,8 +130,8 @@ hr{
     @keyframes move {
         0%  { left: 0; }
         20%  { left: 0; }
-        40% { left: -480px;}
-        60% { left: -950px;}
+        40% { left: -470px;}
+        60% { left: -940px;}
         80% { left: -1410px;}
         100% { left: -1880px;}
     }
